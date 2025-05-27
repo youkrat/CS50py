@@ -1,6 +1,7 @@
 #Defining the main part of the code 
 def main():
 #Removing whitespace and capitalizing the user's name
+    hello()
     name = input("What's your name? ",).strip().title()
     first, second, surname = name.split()
 #Calling the function hello, and saying hello to the user
