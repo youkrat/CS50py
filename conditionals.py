@@ -1,11 +1,9 @@
-def main():
-    x= int(input("What's x? "))
-    if is_even(x):
-        print("Even")
-    else:
-        print("Odd")
+name = input("What's your name? ")
 
-
-def is_even(n):
-    return n % 2 == 0
-main()
+match name:
+    case "Harry" | "Hermione" |"Ron":
+        print("Gryffindor")
+    case "Draco":
+        print("Slytherin")
+    case __:
+        print("Who? ")
