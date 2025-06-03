@@ -1,5 +1,2 @@
-n = 3
-
-while n>0:
-    n = n-1
+for i in [0, 1, 2]:
     print("meow")
