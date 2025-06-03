@@ -1,2 +1,5 @@
-for i in [0, 1, 2]:
-    print("meow")
+n = int(input("How many meows? "))
+while n<=0:
+    n=int(input("How many meows"))
+
+print("meow\n" * n, end="")
