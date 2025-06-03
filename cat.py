@@ -1,5 +1,7 @@
-n = int(input("How many meows? "))
-while n<=0:
-    n=int(input("How many meows"))
-
-print("meow\n" * n, end="")
+while True:
+    n=int(input("How many meows? "))
+    if n>0:
+        break
+    
+for _ in range(n):
+    print("Meow!")
