@@ -1,5 +1,17 @@
-try:
-    x =int(input("What is x? "))
-    print(f"x is {x}")
-except ValueError:
-    print("Erroneous input")
+def get_int():
+    while True:
+        try:
+            x =float(input("What is x? "))
+        except ValueError:
+            print("Erroneous input")
+        else:
+            return x
+def square(n):
+    return n*n
+
+def main():
+    
+    y = get_int()
+    print(f"x squared is {square(y)}")
+    
+main()
