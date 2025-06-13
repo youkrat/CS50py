@@ -3,7 +3,6 @@ def main():
   print_square(size)
   
 def print_square(size):
-
   
   for i in range (size):
     #For each brick in row
