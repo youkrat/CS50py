@@ -1,7 +1,7 @@
-def get_int():
+def get_int(prompt):
     while True:
         try:
-            x =float(input("What is x? "))
+            x =float(input(prompt))
         except ValueError:
             pass
         else:
@@ -11,7 +11,7 @@ def square(n):
 
 def main():
     
-    y = get_int()
+    y = get_int("What's x? ")
     print(f"x squared is {square(y)}")
     
 main()
