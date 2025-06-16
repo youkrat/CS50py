@@ -1,4 +1,6 @@
-import random
+#Imports the choice module from the 'random' library
+from random import choice 
 
-coin = random.choice(["heads", "tails"])
+#removes the need of random.choice
+coin = choice(["heads", "tails"])
 print(coin)  
