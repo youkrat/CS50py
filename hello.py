@@ -3,7 +3,7 @@ def get_int():
         try:
             x =float(input("What is x? "))
         except ValueError:
-            print("Erroneous input")
+            pass
         else:
             return x
 def square(n):
