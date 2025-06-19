@@ -34,4 +34,8 @@ def get_float(prompt):
             return float(input(prompt))
         except ValueError:
             print("Please enter a valid number")
-main()
+
+
+
+if __name__ =="__main__":
+    main()
