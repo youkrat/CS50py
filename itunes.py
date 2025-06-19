@@ -11,6 +11,6 @@ response=requests.get("https://itunes.apple.com/search?entity=song&limit=50&term
 #Grabs the json object I care about 
 o=response.json()
 
-#Prints the results and the key value in trackName
+#Prints the results and the key:value in trackName
 for result in o["results"]:
     print(result["trackName"])
