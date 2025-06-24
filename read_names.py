@@ -5,4 +5,4 @@ with open("names.txt") as file:
         names.append(line.rstrip())
         
 for name in sorted(names, reverse=True):
-    print(f"Hello, {name}")
+    print(f"Hello, {name}") 
