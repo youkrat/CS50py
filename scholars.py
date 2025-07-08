@@ -1,14 +1,12 @@
 def get_student():
-    name=input("What's your name? ")
-    if name =="Padma":
-        house="Ravenclaw"
-    house=input("What's your house? ")
-    #Used a tuple(data type in python) Unchangeable/Immutable
-    return [name,house]
+    student = {}
+    student["name"] = input("Name: ")
+    student["house"] = input("House: ")
+    return student
 
 def main():
-    name,house=get_student()
-    print(f"{name} from {house}")
+    student = get_student()
+    print(f"{student["name"]} from {student["house"]}")
 
 if __name__ =="__main__":
     main()
