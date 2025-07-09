@@ -1,8 +1,10 @@
+#Creates a class named Student
 class Student:
     ...
 
 
 def get_student():
+#Creates an object, student, from class Student
     student = Student()
     student.name = input("Name: ")
     student.house = input("House: ")
