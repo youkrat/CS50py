@@ -1,13 +1,16 @@
 #Creates a class named Student
 class Student:
-    ...
+    #Added instance variables to the object student
+    def __init__(self,name,house):
+        self.name = name
+        self.house =  house
 
 
 def get_student():
-#Creates an object, student, from class Student
-    student = Student()
-    student.name = input("Name: ")
-    student.house = input("House: ")
+    name = input("Name: ")
+    house = input("House: ")
+    #Constructor call. Constructs a student object 
+    student = Student(name,house)
     return student
 
 def main():
