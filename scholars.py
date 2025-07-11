@@ -15,7 +15,7 @@ def get_student():
     house = input("House: ")
     #Constructor call. Constructs a student object 
     return Student(name,house)
-    
+     
 
 def main():
     student = get_student()
