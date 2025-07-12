@@ -1,16 +1,14 @@
-class Hat:        
-    def __init__(self, name):
-        self.name = name
+import random
+
+class Hat: 
+    #Created the class variable houses(Shared/ common in all objects)   
+    houses = ["Gryffindor", "Ravenclaw", "Hufflepuff", "Slytherin"]
+    
+    @classmethod     
+    def sort(cls, name):
+        print(name,"is in", random.choice(cls.houses))
         
-    def sort(self, name):
-        print(name,"is in", "some house")
-        
-    def __getitem__ (self, index):
-        return self.name[index]
         
 
-#Instantiate(create) an object of class Hat   
-hat = Hat(["Harry", "Hermione", "Ron"])
-
-for student in hat[:3]:
-    hat.sort(student)
+#No need to intantiate the object
+Hat.sort("Harry")
