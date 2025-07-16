@@ -8,40 +8,16 @@ class Student:
         
     def __str__(self):
         return f"{self.name} from {self.house}"
-    
-    @property
-    def name(self):
-        return self._name
-    
-    @name.setter
-    def name(self, name):
-        if not name:
-            raise ValueError("Missing name")
-        self._name = name
-            
-    
-    #Getter, and accompanying assignment syntax
-    @property
-    def house(self):
-        return self._house
-    
-    #Setter and accompanying assignment syntax
-    @house.setter
-    def house(self, house):
-        if house not in ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"]:
-            raise ValueError("Invalid house")
-        self._house = house
 
-def get_student():
-    name = input("Name: ")
-    house = input("House: ")
-    #Constructor call(Constructs a student object from the student class
-    #Equally achievable by student = student(name, house) return student
-    return Student(name, house)
+    @classmethod
+    def get(cls):
+        name = input("Name: ")
+        house = input("House: ")
+        return cls(name, house)
      
 
 def main():
-    student = get_student()
+    student = "" 
     if student.name == "Padma":
         student.house = "Ravenclaw"
     print(student)
