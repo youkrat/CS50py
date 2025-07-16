@@ -17,7 +17,7 @@ class Student:
      
 
 def main():
-    student = "" 
+    student = Student.get()
     if student.name == "Padma":
         student.house = "Ravenclaw"
     print(student)
