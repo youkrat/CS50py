@@ -10,5 +10,5 @@ class Hat:
         
         
 
-#No need to intantiate the object
+#No need to instantiate the object
 Hat.sort("Harry")
