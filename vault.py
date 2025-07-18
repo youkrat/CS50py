@@ -7,7 +7,7 @@ class Vault:
     def __str__(self):
         return f"Your balance is {self.galleons} galleons, {self.sickles} sickles ,and {self.knuts} knuts"
     
-    #Added an overloaded operator
+    #Added an overloaded operator 
     def __add__(self, other):
         galleons = self.galleons + other.galleons
         sickles = self.sickles + other.sickles
